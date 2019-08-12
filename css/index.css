@@ -64,6 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.navHr{
+    display: none;
+}
 ul.a {
 	list-style-type: square;
 	padding-left:30px;
@@ -202,7 +205,6 @@ header img {
 
 .top-content div {
 	display: flex;
-	//width: 49%;
 	text-align: justify;
 	padding: 10px;
 }
@@ -234,4 +236,266 @@ body { /* centers the website */
 footer {
 	margin-top: 50px;
 	text-align: center;
+}
+.navHeader{
+    display:flex;
+}
+/* Tablet */
+@media screen and (max-width: 800px) {
+    header .title{
+        //background-color:red;
+        padding-left:170px;
+    }
+    header{
+        width: 780px;
+    }
+    header .title img{
+        background-color:red;
+        display: none;
+    }
+    img.logo{
+        //background-color:red;
+    }
+    hr{
+        width:700px;
+        padding-left:850px;
+    }
+    body {
+        width: 800px;
+	margin: 0 auto;
+      }
+      .navHeader{
+        display:flex;
+        flex-direction: column-reverse;
+        width: 800px;
+        justify-content: center;
+    }
+    nav {
+        justify-content: center;
+        display:flex;
+        align-items: center;
+        margin: auto;
+        
+    }
+    
+    nav a {
+        text-align: center;
+        display: flex;
+        text-decoration: none;
+        color: grey;
+        padding: 25px;
+    }
+    
+    .navHeader .logo {
+        width:180px;
+        height:80px;
+        padding-top:20px;
+        margin-left: 340px;
+        flex-direction: column-reverse;
+        justify-items: center;
+        height: 70px;
+        padding-bottom: 20px;
+        
+    }
+    
+    header .title {
+        display: flex;
+    justify-content: space-between;
+        align-items: center;
+        font-size: 68px;
+        text-align: center;
+        margin: 0px 15px;
+        margin-right: 100px;
+    }
+    
+    header .title button {
+        border: 1px solid black;
+        margin-top: 0px;
+        padding: 6px 40px;
+    }
+    
+    header img {
+        opacity: 0;
+        display: none;
+        width: 35%;
+    }
+    .top-content {
+        display:flex;
+        flex-direction:row;
+        width: 790px;
+    }
+    .top-content div {
+        display: flex;
+        text-align: justify;
+        padding: 10px;
+    }
+    .middle-img {
+        margin: 30px 0px;
+        width: 790px;
+        padding-left:20px;
+    }
+    
+    .bottom-content {
+        width: 790px;
+    }
+    
+    .bottom-content div {
+        display: inline-flex;
+        width: 33%;
+        text-align: justify;
+        padding: 10px;
+        padding-right: 15px;
+    }
+    .contact{
+        padding-left: 20px;
+    }
+    .navHr{
+        display: none;
+    }
+}
+
+/* Cell */
+@media screen and (max-width: 500px) {
+    header .title{
+        align-items: center;
+    }
+    header{
+        width: 480px;
+        align-items: center;
+    }
+    header .title img{
+        align-items: center;
+        background-color:red;
+        display: none;
+    }
+    img.logo{
+        align-items: center;
+        //background-color:red;
+    }
+    hr{
+        align-items: center;
+        width:400px;
+        padding-left:650px;
+    }
+    body {
+        align-items: center;
+        width: 500px;
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+      }
+      .navHeader{
+        align-items: center;
+        display:flex;
+        flex-direction: column-reverse;
+        width: 500px;
+        justify-content: center;
+    }
+    nav {
+        align-items: center;
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        
+    }
+    
+    nav a {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        text-decoration: none;
+        color: grey;
+        padding: 25px;
+    }
+    
+    .navHeader .logo {
+        align-items: center;
+        align-items: center;
+        width:180px;
+        height:80px;
+        padding-top:20px;
+        margin-left: 340px;
+        flex-direction: column-reverse;
+        justify-items: center;
+        height: 70px;
+        padding-bottom: 20px;
+        
+    }
+    
+    header .title {
+        align-items: center;
+        display: flex;
+    justify-content: space-between;
+        align-items: center;
+        font-size: 68px;
+        text-align: center;
+        margin: 0px 15px;
+        margin-right: 100px;
+    }
+    
+    header .title button {
+        align-items: center;
+        border: 1px solid black;
+        margin-top: 0px;
+        padding: 6px 40px;
+    }
+    
+    header img {
+        align-items: center;
+        opacity: 0;
+        display: none;
+        width: 35%;
+    }
+    .top-content {
+        align-items: center;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width: 800px;
+        padding-left:1px;
+    }
+    .top-content div {
+        display: flex;
+        text-align: justify;
+        padding: 10px;
+    }
+    .middle-img {
+        align-items: center;
+        margin: 30px 0px;
+        width:600px;
+        height:90px;
+        padding-left:220px;
+    }
+    
+    .bottom-content {
+        padding-left:200px;
+        width: 800px;
+        align-content: center;
+    }
+    
+    .bottom-content div {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        text-align: justify;
+        padding: 10px;
+        padding-right: 15px;
+    }
+    .contact{
+        padding-left: 220px;
+
+    }
+    .navHr{
+        display: block;
+    }
+    .hrMiddle{
+        align-content: center;
+        padding-right; 500px;
+    }
+    footer{
+        padding-left: 120px;
+        padding-bottom: 20px;
+    }
 }
