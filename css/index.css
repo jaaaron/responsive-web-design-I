@@ -57,7 +57,7 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
     /* background-color: purple; */
     margin: 0 auto;    
-    width: 100vh;
+    /* width: 95vh; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -127,7 +127,6 @@ ul.a {
 /* .main-logo{
 	padding:20px;
 	/* width: 100%; */
-} */
 
 .features{
     /* padding:20px !important; */
@@ -213,9 +212,8 @@ header .title button {
 */
 
 .top-content {
-	display:flex;
-	/* flex-direction:row; */
-	width: 100%;
+    display:flex;
+    padding: 0 2px;
 }
 
 .top-content div {
@@ -231,11 +229,15 @@ header .title button {
     width:100%;
     /* display:flex; */
     justify-content: center;
+    padding: 0 10px;
+
 }
 
 .bottom-content {
     display:flex;
-	width: 100%;
+    width: 100%;
+    padding: 0 2px;
+
 }
 
 .bottom-content div {
@@ -246,7 +248,8 @@ header .title button {
 }
 
 .contact {
-	margin-top: 30px;
+    margin-top: 30px;
+    padding: 0 10px;
 }
 
 
@@ -268,7 +271,6 @@ footer {
     } */
     header{
         /* width: 780px; */
-        width:100%;
         justify-content: center;
     }
     header .title img{
@@ -282,7 +284,7 @@ footer {
     }
     body {
     margin: 0 auto;
-    width: 85vh;
+    width: 85vw;
     /* background-color: pink; */
       }
       .navHeader{
@@ -318,15 +320,14 @@ footer {
         padding-bottom: 20px;
         
     }
-    
+    header {
+        justify-items: center;
+        margin: 0 auto;
+    }
     header .title {
-        /* display: flex; */
-    /* justify-content: space-between; */
         align-items: center;
         font-size: 68px;
-        text-align: center;
-        /* margin: 0px 15px; */
-        margin-right: 100px;
+        text-align: center;        
     }
     
     header .title button {
@@ -343,7 +344,7 @@ footer {
     .top-content {
         display:flex;
         flex-direction:row;
-        /* width: 790px; */
+        width: 85vw;
     }
     .top-content div {
         display: flex;
@@ -401,12 +402,10 @@ footer {
     }
     body {
         margin: 0 auto;
-        /* background-color: yellow; */
         align-items: center;
-        /* width: 500px; */
-    align-content: center;
-    align-items: center;
-    width: 50vh;
+        align-content: center;
+        align-items: center;
+        width: 90vw;
       }
       .hrMiddle {
           width: 10vh;
